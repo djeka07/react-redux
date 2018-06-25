@@ -9,7 +9,7 @@ const sagaMiddleware = createSagaMiddleware()
 
 export default function createReduxStore({ preloadedState, server } = {}) {
   let enhancer
-  console.log('isProduction', config.isProduction)
+
   if (!config.isProduction && !server) {
     /* eslint-disable no-underscore-dangle */
     const composeEnhancers = (global.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ &&
