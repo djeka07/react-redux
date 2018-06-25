@@ -1,5 +1,5 @@
 export function getInitialState(name, defaultState = {}) {
-  const globalprop = globalProp('__INITIAL_STATE__', defaultState)
+  const globalprop = globalProp('__PRELOADED_STATE__', defaultState)
   return globalprop[name] || defaultState
 }
 
