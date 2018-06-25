@@ -22,7 +22,7 @@ const Meta = ({ metaTitle, metaDescription, metaImage, metaVideo }) => {
       { property: 'og:description', content: `${metaDescription}` },
       { property: 'description', content: `${metaDescription}` }]
 
-    if (process.env.NODE_ENV !== 'production') {
+    if (!config.isProduction) {
       meta = [
         ...meta,
         { property: 'robots', content: 'noindex' },
