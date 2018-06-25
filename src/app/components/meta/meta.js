@@ -16,10 +16,7 @@ const Meta = ({ metaTitle, metaDescription, metaImage, metaVideo }) => {
 
     meta = [
       ...meta,
-      ...config.app.meta
-    ]
-
-    meta = [...meta,
+      ...config.app.meta,
       { property: 'og:site_name', content: `${config.app.title}` },
       { property: 'og:title', content: `${metaTitle} - ${config.app.title}` },
       { property: 'og:description', content: `${metaDescription}` },
