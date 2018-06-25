@@ -4,9 +4,6 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import styles from './app.scss'
 
-
-const mapStateToProps = state => ({ data: state.data })
-
 class App extends Component {
   render() {
     return (
@@ -25,5 +22,7 @@ class App extends Component {
 App.propTypes = {
   children: PropTypes.node.isRequired
 }
+
+const mapStateToProps = state => ({ data: state.data })
 
 export default connect(mapStateToProps)(App)

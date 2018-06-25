@@ -1,0 +1,23 @@
+{
+  "presets": [ "env", "react", "stage-0" ],
+  "plugins": [
+    [ 
+      "transform-runtime", 
+      "add-module-exports",
+      "transform-object-rest-spread"
+    ]
+  ],
+  "env": {
+    "server": {
+      "plugins": [
+        [
+          "css-modules-transform", {
+            "preprocessCss": "./loaders/sass-loader.js",
+            "generateScopedName": "[name]__[local]___[hash:base64:5]",
+            "extensions": [".scss"]
+          }
+        ]
+      ]
+    }
+  }
+}

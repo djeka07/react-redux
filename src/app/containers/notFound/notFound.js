@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux';
 import renderMeta from '../../utilities/render'
 
-class NotFound extends Component {
+export default class NotFound extends Component {
   render() {
     return (
       <div>
@@ -12,6 +11,3 @@ class NotFound extends Component {
     )
   }
 }
-
-const mapStateToProps = (state) => ({ data: state.notFound })
-export default connect(mapStateToProps)(NotFound)

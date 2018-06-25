@@ -6,10 +6,7 @@ import fetchHomeData from '../../redux/actions/home'
 import homeSelector from '../../redux/selectors/home/homeSelectors'
 import styles from './home.scss'
 
-const mapStateToProps = (state) => (homeSelector(state))
-const mapDispatchToProps = {
-  fetch: fetchHomeData
-}
+
 
 class Home extends Component {
   componentDidMount() {
@@ -43,6 +40,12 @@ Home.defaultProps = {
   metaDescription: null,
   title: null,
   teaserText: null,
+}
+
+const mapStateToProps = (state) => (homeSelector(state))
+
+const mapDispatchToProps = {
+  fetch: fetchHomeData
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home)

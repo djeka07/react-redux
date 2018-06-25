@@ -15,7 +15,7 @@ export default function*() {
 
 const mockData = {
   metaTitle: 'Hem',
-  metaDescription: 'Välkommer',
+  metaDescription: 'Välkommen',
   title: 'Hem',
   teaserText: 'text'
 }

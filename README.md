@@ -3,6 +3,7 @@
 #### For the app
 - [React](https://reactjs.org/)
 - [Redux](https://redux.js.org/)
+- [React-helmet](https://github.com/nfl/react-helmet)
 - [Redux-saga](https://redux-saga.js.org/)
 - [Redux-persist](https://github.com/rt2zz/redux-persist)
 - [Reselect](https://github.com/reduxjs/reselect)
