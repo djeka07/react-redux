@@ -1,4 +1,4 @@
-# Universal React redux boilerplate Kabang
+# Universal React redux boilerplate
 
 #### For the app
 - [React](https://reactjs.org/)
